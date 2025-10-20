@@ -1,0 +1,232 @@
+/* PARA ALMACENAR VALORES USAREMOS LA PALABRA RESERVADA ROOT., EJ::
+ROOT:{
+--colorP::after
+--pad:15px
+
+Para llamar a la variable usaremos  ej: background-color: var(--colorp);
+
+*/
+
+/* ETIQUETAS */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  background: linear-gradient(to top,#ffffff, #a05b0279);
+
+}
+/* MIS ESTILOS */
+
+.alinear {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    margin: 0px 75px;
+  }
+  a:hover {
+    transform: scale(1.1);
+  }
+}
+.MENU {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  background: linear-gradient(to bottom,#cf5e012d, #a05b0279);
+  border-radius: 20px;
+  height: 65px;
+  font-size: 20px;
+}
+
+.header {
+  background: linear-gradient(to bottom,#ffffff79, #a05b0279);
+  max-height: 150px;
+  padding: 40px;
+  margin: 5px;
+  a {
+    color: rgb(89, 105, 107);
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(95, 59, 4);
+  }
+}
+.acceso {
+  width: 100%; /* ocupa todo el ancho disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* alinea todo a la derecha */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: linear-gradient(rgba(248, 131, 22, 0.103), rgba(170, 98, 3, 0.582));
+  color: rgb(3, 3, 3);
+  border-radius: 10px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.boton {
+  width: 320px;
+  padding: 10px;
+  border-radius: 10px;
+background: linear-gradient(rgba(151, 74, 3, 0.63), rgba(102, 58, 2, 0.945));
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.boton:hover {
+  transform: scale(0.95);
+}
+
+.img_header {
+  width: 170px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.telefono {
+text-align: center;
+  background-color: rgba(212, 142, 11, 0.575);
+  padding: 20PX;
+  margin: 20PX;
+}
+.headerFondo {
+  background: url("../assets/img/tx_212e2d42-b9e1-416f-9f6d-4bf6abd40097_salones_beige_madera_2.jpg") no-repeat;
+  height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h1 {
+    margin: 0;
+    padding: 15px 10px;
+  }
+}
+.header_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton2 {
+  text-align: center;
+  gap: 25px;
+  background-color: rgba(245, 243, 243, 0.459);
+  width: 600px;
+  border-radius: 35px;
+  border-style: groove;
+}
+.headerElement {
+  margin: 5px 0;
+  font-size: 45px;
+  color: #3a3939;
+  font-weight: bolder;
+}
+.CTA {
+  border-radius: 20px;
+  width: 290px;
+  height: 60px 60px;
+  transition: transform 0.3s ease;
+  background-attachment: fixed;
+  &:hover {
+    transform: scale(0.95);
+    height: 50px 50px;
+  }
+}
+.tituloServicios {
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bolder;
+  color: rgb(74, 75, 75);
+
+  text-align: center;
+  margin: 0;
+  letter-spacing: 10px;
+}
+.servicios {
+  background-color: rgba(88, 88, 88, 0.123);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+.services_box {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(110, 108, 105, 0.295);
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom,#ffffff, #a05b0279);
+}
+
+.services_box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imgBox {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.inner_img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.textosServicios {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 130px;
+  color: rgb(189, 91, 26);
+}
+.cajaTexto {
+  font-weight: bold;
+  color: rgb(189, 91, 26);
+  padding: 10px;
+  text-align: center;
+  
+}
+
+/* .services_box{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.486);
+    margin: 20px;
+    .imgBox{
+        overflow: hidden;
+        height: 100px;
+} */
+/* overflow es para que no salga la imagen fuera */
+/* }
+.inner_img{
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+     display: block; 
+} */
